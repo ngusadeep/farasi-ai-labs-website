@@ -1,9 +1,8 @@
 "use client";
 
+import Image from "next/image";
 import { ExternalLink } from "lucide-react";
-import { cn } from "@/lib/utils";
-import { Button, buttonVariants } from "@/components/ui/button";
-import { FlipWords } from "@/components/ui/flip-words";
+import { Button } from "@/components/ui/button";
 import { Logos3 } from "./trusted-by";
 
 const Hero12: React.FC = () => {
@@ -11,10 +10,11 @@ const Hero12: React.FC = () => {
     <section className="relative overflow-hidden py-64">
       {/* Background Pattern */}
       <div className="absolute inset-0 -z-10 flex items-center justify-center opacity-30">
-        <img
-          alt="background pattern"
+        <Image
           src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/patterns/square-alt-grid.svg"
-          className="w-full h-full object-cover [mask-image:radial-gradient(75%_75%_at_center,white,transparent)]"
+          alt="background pattern"
+          fill
+          className="[mask-image:radial-gradient(75%_75%_at_center,white,transparent)] object-cover"
         />
       </div>
 
@@ -24,7 +24,6 @@ const Hero12: React.FC = () => {
           <div className="hidden sm:flex justify-center">
             <div className="relative rounded-full px-4 py-1 text-sm text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
               Empowering Africa&apos;s AI innovation.{" "}
-              
               <a
                 href="#about"
                 className="font-semibold text-indigo-600 relative z-10"
@@ -37,7 +36,6 @@ const Hero12: React.FC = () => {
           {/* Headline and Description */}
           <div className="flex flex-col items-center gap-4 mt-8">
             <h1 className="text-3xl font-bold tracking-tight text-foreground lg:text-5xl">
-              
               Accelerating AI Innovation in{" "}
               <span className="text-primary">Africa & Beyond</span>
             </h1>
@@ -64,7 +62,7 @@ const Hero12: React.FC = () => {
             </Button>
           </div>
 
-          <Logos3/>
+          <Logos3 />
         </div>
       </div>
     </section>
