@@ -23,7 +23,7 @@ const Hero12: React.FC = () => {
           {/* Announcement */}
           <div className="hidden sm:flex justify-center">
             <div className="relative rounded-full px-4 py-1 text-sm text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-              Empowering Africa's AI innovation.{" "}
+              Empowering Africa&apos;s AI innovation.{" "}
               
               <a
                 href="#about"
