@@ -16,6 +16,7 @@ import {
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/carousel";
+import Image from "next/image";
 
 export interface BlogPost {
   id: string;
@@ -184,7 +185,7 @@ const BlogsCarousel = ({
                   >
                     <div className="relative h-[28rem] rounded-xl shadow-lg bg-gradient-to-b from-white to-gray-100 transition-transform group-hover:scale-105">
                       {/* Image */}
-                      <img
+                      <Image
                         src={post.image}
                         alt={post.title}
                         className="absolute h-full w-full object-cover object-center"
