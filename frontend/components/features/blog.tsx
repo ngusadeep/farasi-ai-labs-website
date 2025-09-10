@@ -188,6 +188,8 @@ const BlogsCarousel = ({
                       <Image
                         src={post.image}
                         alt={post.title}
+                        width={50}
+                        height={50}
                         className="absolute h-full w-full object-cover object-center"
                         style={{
                           maskImage:

@@ -24,7 +24,7 @@ export default function AboutUs() {
 
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
-          <h2 className="text-5xl font-semibold tracking-tight text-white sm:text-5xl">
+          <h2 className="text-3xl font-semibold tracking-tight text-white sm:text-3xl">
             About Farasi Ai Labs
           </h2>
           <p className="mt-8 text-lg text-gray-300 sm:text-xl">

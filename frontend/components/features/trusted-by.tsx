@@ -103,6 +103,8 @@ const Logos3 = ({
                       <Image
                         src={logo.image}
                         alt={logo.description}
+                        width={50}
+                        height={50}
                         className={logo.className}
                       />
                     </div>
