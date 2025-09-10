@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Navbar } from "@/components/features/navbar5";
 import { Footer7 } from "@/components/features/footer";
-
+import { Analytics } from "@vercel/analytics/react";
 import { Montserrat } from "next/font/google";
 
 const montserrat = Montserrat({
@@ -24,6 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${montserrat.variable} antialiased`}>
+      <Analytics />
         <Navbar />
         {children}
         <Footer7 />
