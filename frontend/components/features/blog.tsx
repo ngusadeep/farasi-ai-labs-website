@@ -74,8 +74,7 @@ const defaultPosts: BlogPost[] = [
     author: "Jane Otieno",
     published: "10 Jul 2025",
     url: "#",
-    image:
-      "https://images.unsplash.com/photo-1581092334451-d6f6c0fcd96?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
+    image: "/prof/srtgraphy-XuE4VOev4AU-unsplash.jpg",
   },
   {
     id: "post-4",
@@ -86,8 +85,7 @@ const defaultPosts: BlogPost[] = [
     author: "Dr. Samuel Ngusa",
     published: "1 Jun 2025",
     url: "#",
-    image:
-      "https://images.unsplash.com/photo-1605902711622-3d6f6c0fcd96?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
+    image: "/prof/srtgraphy-2tB4LNeoZMA-unsplash.jpg",
   },
 ];
 
