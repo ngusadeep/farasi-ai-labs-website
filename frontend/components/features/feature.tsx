@@ -48,14 +48,14 @@ const Feature43 = () => {
   ];
 
   return (
-    <section className="py-32">
+    <section id="values" className="py-32">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Intro */}
         <div className="text-center max-w-2xl mx-auto mb-16">
           <p className="text-sm text-muted-foreground uppercase tracking-wider mb-2">
             Our Values
           </p>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold">
             Why Choose Farasi AI Labs?
           </h2>
         </div>

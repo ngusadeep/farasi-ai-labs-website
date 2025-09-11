@@ -102,25 +102,28 @@ const BlogsCarousel = ({
   const [canScrollPrev, setCanScrollPrev] = useState(false);
   const [canScrollNext, setCanScrollNext] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0);
-  
+
   const updateCarousel = useCallback(() => {
     if (!carouselApi) return;
     setCanScrollPrev(carouselApi.canScrollPrev());
     setCanScrollNext(carouselApi.canScrollNext());
     setCurrentSlide(carouselApi.selectedScrollSnap());
   }, [carouselApi]);
-  
-  const scrollTo = useCallback((index: number) => {
-    carouselApi?.scrollTo(index);
-  }, [carouselApi]);
+
+  const scrollTo = useCallback(
+    (index: number) => {
+      carouselApi?.scrollTo(index);
+    },
+    [carouselApi],
+  );
 
   useEffect(() => {
     if (!carouselApi) return;
-    
+
     updateCarousel();
     carouselApi.on("select", updateCarousel);
     carouselApi.on("reInit", updateCarousel);
-    
+
     return () => {
       carouselApi.off("select", updateCarousel);
       carouselApi.off("reInit", updateCarousel);
@@ -133,7 +136,7 @@ const BlogsCarousel = ({
         {/* Header */}
         <div className="mb-10 flex flex-col md:flex-row items-end justify-between gap-6 md:gap-0">
           <div className="max-w-xl flex flex-col gap-3">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold">
+            <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold">
               {title}
             </h2>
             <p className="text-gray-600">{description}</p>

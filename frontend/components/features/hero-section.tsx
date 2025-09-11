@@ -21,15 +21,11 @@ const Hero12: React.FC = () => {
       <div className="relative z-10 container mx-auto px-4">
         <div className="mx-auto flex max-w-5xl flex-col items-center text-center gap-12">
           {/* Announcement */}
-          <div className="hidden sm:flex justify-center">
-            <div className="relative rounded-full px-4 py-1 text-sm text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-              Empowering Africa&apos;s AI innovation.{" "}
-              <a
-                href="#about"
-                className="font-semibold text-indigo-600 relative z-10"
-              >
-                Learn more <span aria-hidden="true">&rarr;</span>
-              </a>
+          <div className="sm:flex justify-center">
+            <div className=" relative rounded-full px-4 py-1 text-sm  ring-1 bg-linear-to-r from-[#ff80b5]/30 to-[#9089fc]/30 ring-gray-900/10 hover:ring-gray-900/20">
+              <p className="text-gray-900">
+                Empowering Africa&apos;s AI innovation.{" "}
+              </p>
             </div>
           </div>
 
@@ -37,14 +33,13 @@ const Hero12: React.FC = () => {
           <div className="flex flex-col items-center gap-4 mt-8">
             <h1 className="text-3xl font-bold tracking-tight text-foreground lg:text-5xl">
               Accelerating AI Innovation in{" "}
-              <span className="text-primary">Africa & Beyond</span>
+              <span className="text-primary">Sub-Saharan Africa & Beyond</span>
             </h1>
             <p className="max-w-4xl text-muted-foreground text-base lg:text-lg">
-              Farasi AI Labs is pioneering intelligent, culturally aware, and
-              high-speed AI solutions. From Swahili language chatbots to
-              advanced machine learning models, we build AI that empowers
-              businesses, communities, and researchers across Africa and
-              globally.
+              We thrive to build AI that understands culture, acts fast, and
+              drives impact. From advanced machine learning to intelligent AI
+              systems, our solutions empower businesses, researchers, and
+              communities across our grasp and globally.
             </p>
           </div>
 

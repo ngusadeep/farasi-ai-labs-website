@@ -24,7 +24,7 @@ const Contact7 = ({
       <div className="container mx-auto px-4">
         {/* Heading */}
         <div className="mb-14 text-center">
-          <h1 className="mb-3 text-3xl font-semibold text-gray-800 md:text-4xl">
+          <h1 className="mb-3 text-2xl font-semibold text-gray-800 md:text-3xl">
             {title}
           </h1>
           <p className="text-gray-400 max-w-xl mx-auto text-lg">

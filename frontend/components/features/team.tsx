@@ -25,8 +25,7 @@ const Team2 = ({
       id: "member-1",
       name: "Samwel Ngusa",
       role: "CEO , Founder & MLOps Engineer",
-      avatar:
-        "./prof/IMG_0322.jpg",
+      avatar: "./prof/IMG_0322.jpg",
       github: "https://github.com/ngusadeep",
       website: "https://ngusadeep.vercel.app",
       linkedin: "#",
@@ -35,8 +34,7 @@ const Team2 = ({
       id: "member-2",
       name: "Godfrey Enosh",
       role: "Ai & ML Engineer",
-      avatar:
-        "./prof/IMG_0883.jpg",
+      avatar: "./prof/IMG_0883.jpg",
       github: "https://github.com/Godie360",
       website: "https://godie.codes",
       linkedin: "#",
@@ -45,8 +43,7 @@ const Team2 = ({
       id: "member-3",
       name: "Tachera Sasi",
       role: "Backend & DevOps Engineer",
-      avatar:
-        "./prof/IMG_0330.jpg",
+      avatar: "./prof/IMG_0330.jpg",
       github: "https://github.com/tacheraSasi",
       website: "https://tachera.vercel.app",
       linkedin: "#",
@@ -84,11 +81,11 @@ const Team2 = ({
   ],
 }: Team2Props) => {
   return (
-    <section className="py-24 lg:py-32 bg-background">
+    <section id="team" className="py-24 lg:py-32 bg-background">
       <div className="container mx-auto px-4">
         {/* Section Heading */}
         <div className="mb-16 text-center">
-          <h2 className="mb-4 text-3xl font-bold tracking-tight lg:text-5xl">
+          <h2 className="mb-4 text-2xl font-bold tracking-tight lg:text-4xl">
             {heading}
           </h2>
           <p className="text-muted-foreground mx-auto max-w-2xl text-lg leading-relaxed">

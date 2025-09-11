@@ -68,7 +68,7 @@ const Projects = () => {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="mx-auto max-w-4xl text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-semibold tracking-tight mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
             Our Projects
           </h2>
           <p className="text-muted-foreground text-lg md:text-xl">

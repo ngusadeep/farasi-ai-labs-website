@@ -1,20 +1,23 @@
 const links = [
-  { name: "Our Mission", href: "#mission" },
-  { name: "Our Vision", href: "#vision" },
+  { name: "Our Mission", href: "#about" },
+  { name: "Our Vision", href: "#about" },
   { name: "Core Values", href: "#values" },
   { name: "Leadership Team", href: "#team" },
 ];
 
-const stats = [
-  { name: "AI Models Developed", value: "15+" },
-  { name: "Researchers & Engineers", value: "25+" },
-  { name: "Global Partnerships", value: "10+" },
-  { name: "Projects Completed", value: "50+" },
-];
+// const stats = [
+//   { name: "AI Models Developed", value: "15+" },
+//   { name: "Researchers", value: "25+" },
+//   { name: "Global Partnerships", value: "1+" },
+//   { name: "Projects Completed", value: "50+" },
+// ];
 
 export default function AboutUs() {
   return (
-    <div className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
+    <div
+      id="about"
+      className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32"
+    >
       {/* Background Images */}
       <img
         alt=""
@@ -22,18 +25,25 @@ export default function AboutUs() {
         className="absolute inset-0 -z-10 w-full h-full object-cover object-center"
       />
 
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 lg:px-6">
         <div className="mx-auto max-w-2xl lg:mx-0">
-          <h2 className="text-3xl font-semibold tracking-tight text-white sm:text-3xl">
-            About Farasi Ai Labs
+          <h2 className="text-3xl font-bold tracking-tight text-white sm:text-3xl">
+            About <span className="font-normal">Farasi Ai Lab</span>
           </h2>
           <p className="mt-8 text-lg text-gray-300 sm:text-xl">
-            Farasi AI Labs is a leading African AI research and development hub,
-            dedicated to creating intelligent, fast, and culturally aware AI
-            solutions. Inspired by the strength and speed of the horse (Farasi
-            in Swahili), we empower businesses and communities through
-            cutting-edge AI models, natural language processing systems, and
-            advanced machine learning technologies.
+            Farasi AI Labs is an African AI research and product hub dedicated
+            to creating intelligent, fast, and culturally aware AI solutions.
+            <br />
+            <br />
+            Inspired by the strength and agility of the horse (Farasi in
+            Swahili), we empower businesses and communities across Sub-Saharan
+            Africa and globally through cutting-edge AI models, natural language
+            processing systems, and advanced machine learning technologies.{" "}
+            <br />
+            <br />
+            Our mission is to develop AI solutions that are innovative,
+            contextually relevant, and impactful—helping Sub-Saharan Africa lead
+            in AI innovation while addressing global challenges
           </p>
         </div>
 
@@ -52,7 +62,7 @@ export default function AboutUs() {
           </div>
 
           {/* Stats */}
-          <dl className="mt-16 grid grid-cols-2 gap-10 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
+          {/*<dl className="mt-16 grid grid-cols-2 gap-10 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
             {stats.map((stat) => (
               <div key={stat.name} className="flex flex-col-reverse gap-1">
                 <dt className="text-base text-gray-300">{stat.name}</dt>
@@ -61,7 +71,7 @@ export default function AboutUs() {
                 </dd>
               </div>
             ))}
-          </dl>
+          </dl>*/}
         </div>
       </div>
     </div>
