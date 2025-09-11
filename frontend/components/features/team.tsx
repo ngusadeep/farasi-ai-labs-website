@@ -85,7 +85,7 @@ const Team2 = ({
       <div className="container mx-auto px-4">
         {/* Section Heading */}
         <div className="mb-16 text-center">
-          <h2 className="mb-4 text-2xl font-bold tracking-tight lg:text-4xl">
+          <h2 className="mb-4 text-xl font-bold tracking-tight lg:text-3xl">
             {heading}
           </h2>
           <p className="text-muted-foreground mx-auto max-w-2xl text-lg leading-relaxed">

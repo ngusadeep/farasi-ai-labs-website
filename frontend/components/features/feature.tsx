@@ -48,20 +48,25 @@ const Feature43 = () => {
   ];
 
   return (
-    <section id="values" className="py-32">
+    <section id="values" className="py-28">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Intro */}
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <p className="text-sm text-muted-foreground uppercase tracking-wider mb-2">
+          {/*<p className="text-sm text-muted-foreground uppercase tracking-wider mb-2">
             Our Values
-          </p>
+          </p>*/}
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold">
-            Why Choose Farasi AI Labs?
+            Our values
           </h2>
+          <p className="text-muted-foreground pt-6 text-lg md:text-lg">
+            Driving innovation and meaningful impact businesses, medical
+            professionals, organizations, and farmers across Sub-Saharan Africa
+            and globally.
+          </p>
         </div>
 
         {/* Feature Cards */}
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid max-w-8xl gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {reasons.map((reason, i) => (
             <div
               key={i}

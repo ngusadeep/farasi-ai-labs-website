@@ -68,10 +68,10 @@ const Projects = () => {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="mx-auto max-w-4xl text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
+          <h2 className="text-2xl md:text-3xl font-bold tracking-tight mb-4">
             Our Projects
           </h2>
-          <p className="text-muted-foreground text-lg md:text-xl">
+          <p className="text-muted-foreground text-lg md:text-lg">
             Farasi AI Labs develops cutting-edge AI solutions that empower
             businesses, medical professionals, organizations, and farmers across
             Africa.
@@ -79,7 +79,7 @@ const Projects = () => {
         </div>
 
         {/* Projects Grid */}
-        <div className="mx-auto max-w-6xl grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-2">
+        <div className="mx-auto max-w-8xl grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-2">
           {projects.map((project, idx) => (
             <a
               key={idx}

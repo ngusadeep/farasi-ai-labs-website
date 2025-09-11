@@ -5,12 +5,12 @@ const links = [
   { name: "Leadership Team", href: "#team" },
 ];
 
-// const stats = [
-//   { name: "AI Models Developed", value: "15+" },
-//   { name: "Researchers", value: "25+" },
-//   { name: "Global Partnerships", value: "1+" },
-//   { name: "Projects Completed", value: "50+" },
-// ];
+const stats = [
+  { name: "AI Models Developed", value: "2" },
+  // { name: "Researchers", value: "25+" },
+  { name: "Global Partnerships", value: "1" },
+  { name: "Projects Completed", value: "4" },
+];
 
 export default function AboutUs() {
   return (
@@ -25,8 +25,8 @@ export default function AboutUs() {
         className="absolute inset-0 -z-10 w-full h-full object-cover object-center"
       />
 
-      <div className="mx-auto max-w-7xl px-4 lg:px-6">
-        <div className="mx-auto max-w-2xl lg:mx-0">
+      <div className="mx-auto max-w-7xl px-4 lg:px-3">
+        <div className="mx-auto max-w-3xl lg:mx-0">
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-3xl">
             About <span className="font-normal">Farasi Ai Lab</span>
           </h2>
@@ -62,7 +62,7 @@ export default function AboutUs() {
           </div>
 
           {/* Stats */}
-          {/*<dl className="mt-16 grid grid-cols-2 gap-10 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
+          <dl className="mt-16 grid grid-cols-2 gap-10 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
             {stats.map((stat) => (
               <div key={stat.name} className="flex flex-col-reverse gap-1">
                 <dt className="text-base text-gray-300">{stat.name}</dt>
@@ -71,7 +71,7 @@ export default function AboutUs() {
                 </dd>
               </div>
             ))}
-          </dl>*/}
+          </dl>
         </div>
       </div>
     </div>
