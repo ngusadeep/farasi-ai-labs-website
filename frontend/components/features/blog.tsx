@@ -52,8 +52,7 @@ const defaultPosts: BlogPost[] = [
     author: "Dr. Amina Yusuf",
     published: "5 Sep 2025",
     url: "#",
-    image:
-      "https://images.unsplash.com/photo-1581091215360-283f0a1f5f1b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
+    image: "/prof/srtgraphy-AQW0p7lKOpI-unsplash.jpg",
   },
   {
     id: "post-2",
@@ -64,8 +63,7 @@ const defaultPosts: BlogPost[] = [
     author: "Kevin Mwangi",
     published: "20 Aug 2025",
     url: "#",
-    image:
-      "https://images.unsplash.com/photo-1605902711622-cfb43c4434a7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
+    image: "/prof/srtgraphy-XRGUoUl2TMw-unsplash.jpg",
   },
   {
     id: "post-3",
@@ -186,41 +184,39 @@ const BlogsCarousel = ({
                     href={post.url}
                     className="group block rounded-xl overflow-hidden"
                   >
-                    <div className="relative h-[28rem] rounded-xl shadow-lg bg-gradient-to-b from-white to-gray-100 transition-transform group-hover:scale-105">
+                    <div className="relative h-[28rem] rounded-xl shadow-lg overflow-hidden transition-transform group-hover:scale-105">
                       {/* Image */}
                       <Image
                         src={post.image}
                         alt={post.title}
-                        width={50}
-                        height={50}
-                        className="absolute h-full w-full object-cover object-center"
-                        style={{
-                          maskImage:
-                            "linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%)",
-                          WebkitMaskImage:
-                            "linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%)",
-                        }}
+                        fill
+                        className="object-cover object-center"
                       />
+
+                      {/* Gradient Overlay for readability */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent" />
+
                       {/* Category Icon */}
-                      <div className="absolute top-4 right-4 bg-primary rounded-full p-2 shadow-lg">
+                      <div className="absolute top-4 right-4 bg-primary text-white rounded-full p-2 shadow-md z-10">
                         {iconMap[post.label]}
                       </div>
+
                       {/* Content */}
-                      <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-gray-50/80 to-transparent">
-                        <div className="text-sm font-medium uppercase text-gray-700">
+                      <div className="absolute bottom-0 left-0 right-0 p-4 z-10">
+                        <div className="text-sm font-semibold uppercase text-white/90">
                           {post.label}
                         </div>
-                        <h3 className="text-xl font-semibold text-gray-900 mt-1">
+                        <h3 className="text-xl font-bold text-white mt-1 leading-snug">
                           {post.title}
                         </h3>
-                        <p className="mt-2 text-sm line-clamp-3 text-gray-700">
+                        <p className="mt-2 text-sm line-clamp-3 text-gray-200">
                           {post.summary}
                         </p>
-                        <div className="mt-3 flex items-center justify-between text-xs text-gray-600 opacity-90">
+                        <div className="mt-3 font-medium flex items-center justify-between text-xs text-gray-300 opacity-90">
                           <span>{post.author}</span>
                           <span>{post.published}</span>
                         </div>
-                        <div className="mt-2 flex items-center gap-1 text-sm font-medium text-primary">
+                        <div className="mt-2 flex items-center gap-1 text-sm font-medium text-gray-200">
                           Read more{" "}
                           <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
                         </div>
