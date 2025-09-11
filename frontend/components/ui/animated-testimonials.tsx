@@ -3,7 +3,10 @@
 import { IconArrowLeft, IconArrowRight } from "@tabler/icons-react";
 import { motion, AnimatePresence } from "motion/react";
 import { useEffect, useState } from "react";
-import { Testimonial, testimonials as defaultTestimonials } from "@/constants/data";
+import {
+  Testimonial,
+  testimonials as defaultTestimonials,
+} from "@/constants/data";
 import Image from "next/image";
 
 interface AnimatedTestimonialsProps {
@@ -15,7 +18,9 @@ export const AnimatedTestimonials = ({
   testimonials: externalTestimonials,
   autoplay = false,
 }: AnimatedTestimonialsProps) => {
-  const testimonials = externalTestimonials?.length ? externalTestimonials : defaultTestimonials;
+  const testimonials = externalTestimonials?.length
+    ? externalTestimonials
+    : defaultTestimonials;
   const [active, setActive] = useState(0);
 
   // ✅ Hydration-safe: generate random rotations only after client mount
@@ -24,8 +29,10 @@ export const AnimatedTestimonials = ({
     setRotations(testimonials.map(() => Math.floor(Math.random() * 21) - 10));
   }, [testimonials]);
 
-  const handleNext = () => setActive((prev) => (prev + 1) % testimonials.length);
-  const handlePrev = () => setActive((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+  const handleNext = () =>
+    setActive((prev) => (prev + 1) % testimonials.length);
+  const handlePrev = () =>
+    setActive((prev) => (prev - 1 + testimonials.length) % testimonials.length);
   const isActive = (index: number) => index === active;
 
   useEffect(() => {
@@ -48,16 +55,28 @@ export const AnimatedTestimonials = ({
             {testimonials.map((testimonial, index) => (
               <motion.div
                 key={testimonial.src}
-                initial={{ opacity: 0, scale: 0.9, z: -100, rotate: rotations[index] }}
+                initial={{
+                  opacity: 0,
+                  scale: 0.9,
+                  z: -100,
+                  rotate: rotations[index],
+                }}
                 animate={{
                   opacity: isActive(index) ? 1 : 0.7,
                   scale: isActive(index) ? 1 : 0.95,
                   z: isActive(index) ? 0 : -100,
                   rotate: isActive(index) ? 0 : rotations[index],
-                  zIndex: isActive(index) ? 40 : testimonials.length + 2 - index,
+                  zIndex: isActive(index)
+                    ? 40
+                    : testimonials.length + 2 - index,
                   y: isActive(index) ? [0, -80, 0] : 0,
                 }}
-                exit={{ opacity: 0, scale: 0.9, z: 100, rotate: rotations[index] }}
+                exit={{
+                  opacity: 0,
+                  scale: 0.9,
+                  z: 100,
+                  rotate: rotations[index],
+                }}
                 transition={{ duration: 0.4, ease: "easeInOut" }}
                 className="absolute inset-0 origin-bottom"
               >
@@ -75,7 +94,7 @@ export const AnimatedTestimonials = ({
         </div>
 
         {/* Text */}
-        <div className="flex flex-col justify-between py-4">
+        <div className="flex flex-col justify-between py-2">
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={testimonial.name}
@@ -91,7 +110,7 @@ export const AnimatedTestimonials = ({
               <p className="text-sm text-gray-500 dark:text-neutral-500">
                 {testimonial.designation}
               </p>
-              <motion.p className="mt-8 text-sm text-gray-500 dark:text-neutral-300">
+              <motion.p className="mt-8 text-md text-gray-500 dark:text-neutral-300">
                 {testimonial.quote.split(" ").map((word, wordIndex) => (
                   <motion.span
                     key={wordIndex}
@@ -113,7 +132,7 @@ export const AnimatedTestimonials = ({
         </div>
 
         {/* Controls */}
-        <div className="flex gap-4 pt-12 md:pt-0">
+        <div className="flex gap-4 pt-4 md:pt-0">
           <button
             onClick={handlePrev}
             className="group/button flex h-7 w-7 items-center justify-center rounded-full bg-gray-100 dark:bg-neutral-800"
