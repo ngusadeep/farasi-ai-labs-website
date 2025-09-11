@@ -23,32 +23,32 @@ const Team2 = ({
   members = [
     {
       id: "member-1",
-      name: "Sarah Chen",
-      role: "Ui/UX & Frontend Engineer",
-      avatar:
-        "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp",
-      github: "#",
-      website: "#",
-      linkedin: "#",
-    },
-    {
-      id: "member-2",
       name: "Samwel Ngusa",
       role: "CEO , Founder & MLOps Engineer",
       avatar:
         "./prof/IMG_0322.jpg",
-      github: "#",
+      github: "https://github.com/ngusadeep",
       website: "https://ngusadeep.vercel.app",
+      linkedin: "#",
+    },
+    {
+      id: "member-2",
+      name: "Godfrey Enosh",
+      role: "Ai & ML Engineer",
+      avatar:
+        "./prof/IMG_0883.jpg",
+      github: "https://github.com/Godie360",
+      website: "https://godie.codes",
       linkedin: "#",
     },
     {
       id: "member-3",
       name: "Tachera Sasi",
-      role: "Backend & DEvOpsEngineer",
+      role: "Backend & DevOps Engineer",
       avatar:
         "./prof/IMG_0330.jpg",
-      github: "#",
-      website: "#",
+      github: "https://github.com/tacheraSasi",
+      website: "https://tachera.vercel.app",
       linkedin: "#",
     },
     // {
