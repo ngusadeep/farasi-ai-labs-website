@@ -4,6 +4,7 @@ import Image from "next/image";
 import { ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Logos3 } from "./trusted-by";
+import SplitText from "./../SplitText";
 
 const Hero12: React.FC = () => {
   return (
@@ -33,7 +34,21 @@ const Hero12: React.FC = () => {
           <div className="flex flex-col items-center gap-4 mt-8">
             <h1 className="text-3xl font-bold tracking-tight text-foreground lg:text-5xl">
               Accelerating AI Innovation in{" "}
-              <span className="text-primary">Sub-Saharan Africa & Beyond</span>
+              <span className="">
+                <SplitText
+                  text="Sub-Saharan Africa & Beyond"
+                  className="text-linear-to-r from-[#ff80b5]/30 to-[#9089fc]/30"
+                  delay={100}
+                  duration={0.6}
+                  ease="power3.out"
+                  splitType="chars"
+                  from={{ opacity: 0, y: 40 }}
+                  to={{ opacity: 1, y: 0 }}
+                  threshold={0.1}
+                  rootMargin="-100px"
+                  textAlign="center"
+                />
+              </span>
             </h1>
             <p className="max-w-4xl text-muted-foreground text-base lg:text-lg">
               We thrive to build AI that understands culture, acts fast, and
