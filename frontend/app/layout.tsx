@@ -14,6 +14,19 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: "Farasi Ai Lab",
   description: "AI innovation lab in Africa",
+  icons: [
+    // {
+    //   rel: 'icon',
+    //   url: '/favicon_light.svg',
+    //   media: '(prefers-color-scheme: light)',   // 👈 used when light mode
+    //   type: 'image/svg+xml',
+    // },
+    {
+      rel: "icon",
+      url: "/favicon.svg", // 👈 used when dark mode
+      type: "image/svg+xml",
+    },
+  ],
 };
 
 export default function RootLayout({
@@ -24,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${montserrat.variable} antialiased`}>
-      <Analytics />
+        <Analytics />
         <Navbar />
         {children}
         <Footer7 />
