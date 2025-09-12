@@ -28,17 +28,19 @@ interface Logos3Props {
 
 const Logos3 = ({
   heading = "Trusted by these companies",
-  const logos = [
+  logos = [
     {
       id: "logo-1",
       description: "Google",
-      image: "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg",
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg",
       className: "h-7 w-auto",
     },
     {
       id: "logo-2",
       description: "OpenAI",
-      image: "https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg",
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg",
       className: "h-7 w-auto",
     },
     {
@@ -50,35 +52,39 @@ const Logos3 = ({
     {
       id: "logo-4",
       description: "NVIDIA",
-      image: "https://upload.wikimedia.org/wikipedia/commons/2/21/Nvidia_logo.svg",
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/2/21/Nvidia_logo.svg",
       className: "h-7 w-auto",
     },
     {
       id: "logo-5",
       description: "DeepMind",
-      image: "https://upload.wikimedia.org/wikipedia/commons/5/5e/DeepMind_logo.png",
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/5/5e/DeepMind_logo.png",
       className: "h-7 w-auto",
     },
     {
       id: "logo-6",
       description: "Anthropic",
-      image: "https://upload.wikimedia.org/wikipedia/commons/7/7e/Anthropic_logo.svg",
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/7/7e/Anthropic_logo.svg",
       className: "h-7 w-auto",
     },
     {
       id: "logo-7",
       description: "Hugging Face",
-      image: "https://upload.wikimedia.org/wikipedia/commons/5/5a/Hugging_Face_logo.svg",
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/5/5a/Hugging_Face_logo.svg",
       className: "h-7 w-auto",
     },
     {
       id: "logo-8",
       description: "Stability AI",
-      image: "https://upload.wikimedia.org/wikipedia/commons/4/4e/Stability_AI_logo.svg",
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/4/4e/Stability_AI_logo.svg",
       className: "h-7 w-auto",
     },
-  ]
-
+  ],
 }: Logos3Props) => {
   return (
     <section className="py-12">
