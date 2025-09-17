@@ -61,7 +61,7 @@ const Navbar: React.FC = () => {
 
   return (
     <header
-      className={`fixed top-1 left-0 w-full z-50 transition-all ${
+      className={`fixed top-0 left-0 w-full z-50 transition-all ${
         scrolled ? "bg-white/50 backdrop-blur-sm shadow-sm" : "bg-transparent"
       }`}
     >
