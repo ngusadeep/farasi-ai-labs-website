@@ -6,20 +6,6 @@ import { FaLeaf, FaArrowRight } from "react-icons/fa"; // Leaf and arrow icons
 const Projects = () => {
   const projects = [
     {
-      icon: <MessageCircle className="h-6 w-6 text-blue-600" />,
-      title: "FarasiChat",
-      description:
-        "Swahili-centric AI chatbot platform for businesses and communities, enabling natural conversations.",
-      items: [
-        "Conversational AI",
-        "Customer Support Bots",
-        "FarasiChat Integration",
-      ],
-      bgColor: "bg-blue-100",
-      iconBg: "bg-blue-200",
-      link: "#projects",
-    },
-    {
       icon: <Brain className="h-6 w-6 text-red-600" />,
       title: "NeuralSense",
       description:
@@ -59,6 +45,20 @@ const Projects = () => {
       ],
       bgColor: "bg-green-100",
       iconBg: "bg-green-200",
+      link: "#projects",
+    },
+    {
+      icon: <MessageCircle className="h-6 w-6 text-blue-600" />,
+      title: "FarasiChat",
+      description:
+        "Swahili-centric AI chatbot platform for businesses and communities, enabling natural conversations.",
+      items: [
+        "Conversational AI",
+        "Customer Support Bots",
+        "FarasiChat Integration",
+      ],
+      bgColor: "bg-blue-100",
+      iconBg: "bg-blue-200",
       link: "#projects",
     },
   ];
