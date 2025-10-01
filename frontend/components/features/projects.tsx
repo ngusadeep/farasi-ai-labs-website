@@ -1,6 +1,12 @@
 "use client";
 
-import { MessageCircle, Brain, ScanFace } from "lucide-react";
+import {
+  MessageCircle,
+  Brain,
+  ScanFace,
+  AlertTriangle,
+  Video,
+} from "lucide-react";
 import { FaLeaf, FaArrowRight } from "react-icons/fa"; // Leaf and arrow icons
 
 const Projects = () => {
@@ -34,6 +40,21 @@ const Projects = () => {
       link: "#projects",
     },
     {
+      icon: <Video className="h-6 w-6 text-blue-600" />,
+      title: "Blinkit",
+      description:
+        "AI-powered visual anomaly detection system that learns normal patterns from video streams and flags unusual events in real time, enhancing safety, security, and operational awareness.",
+      items: [
+        "Real-time Anomaly Detection",
+        "Behavioral Pattern Analysis",
+        "Automated Alerts & Monitoring",
+      ],
+      bgColor: "bg-blue-100",
+      iconBg: "bg-blue-200",
+      link: "#projects",
+    },
+
+    {
       icon: <ScanFace className="h-6 w-6 text-purple-600" />,
       title: "TrueSpot",
       description:
@@ -49,7 +70,7 @@ const Projects = () => {
     },
 
     {
-      icon: <MessageCircle className="h-6 w-6 text-blue-600" />,
+      icon: <MessageCircle className="h-6 w-6 text-cyan-600" />,
       title: "FarasiChat",
       description:
         "Swahili-centric AI chatbot platform for businesses and communities, enabling natural conversations.",
@@ -58,8 +79,8 @@ const Projects = () => {
         "Customer Support Bots",
         "FarasiChat Integration",
       ],
-      bgColor: "bg-blue-100",
-      iconBg: "bg-blue-200",
+      bgColor: "bg-cyan-100",
+      iconBg: "bg-cyan-200",
       link: "#projects",
     },
   ];
@@ -80,7 +101,7 @@ const Projects = () => {
         </div>
 
         {/* Projects Grid */}
-        <div className="mx-auto max-w-8xl grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-2">
+        <div className="mx-auto max-w-8xl grid grid-cols-1 gap-10 md:grid-cols-3 lg:grid-cols-3">
           {projects.map((project, idx) => (
             <a
               key={idx}
