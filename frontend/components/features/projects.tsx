@@ -20,20 +20,6 @@ const Projects = () => {
       link: "#projects",
     },
     {
-      icon: <ScanFace className="h-6 w-6 text-purple-600" />,
-      title: "TrueSpot",
-      description:
-        "Face recognition-based attendance system for schools and organizations, improving accuracy and efficiency.",
-      items: [
-        "Real-time Face Recognition",
-        "Automated Attendance",
-        "Secure Data Management",
-      ],
-      bgColor: "bg-purple-100",
-      iconBg: "bg-purple-200",
-      link: "#projects",
-    },
-    {
       icon: <FaLeaf className="h-6 w-6 text-green-600" />,
       title: "AgroSync",
       description:
@@ -47,6 +33,21 @@ const Projects = () => {
       iconBg: "bg-green-200",
       link: "#projects",
     },
+    {
+      icon: <ScanFace className="h-6 w-6 text-purple-600" />,
+      title: "TrueSpot",
+      description:
+        "Face recognition-based attendance system for schools and organizations, improving accuracy and efficiency.",
+      items: [
+        "Real-time Face Recognition",
+        "Automated Attendance",
+        "Secure Data Management",
+      ],
+      bgColor: "bg-purple-100",
+      iconBg: "bg-purple-200",
+      link: "#projects",
+    },
+
     {
       icon: <MessageCircle className="h-6 w-6 text-blue-600" />,
       title: "FarasiChat",
