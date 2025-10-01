@@ -37,7 +37,7 @@ const defaultSections = [
     ],
   },
   {
-    title: "Company",
+    title: "Lab",
     links: [
       { name: "Our Mission", href: "#about" },
       { name: "Team", href: "#" },
@@ -75,25 +75,30 @@ const Footer7: React.FC<FooterProps> = ({
     title: "Farasi AI Labs",
   },
   sections = defaultSections,
-  description = "Building Africa's future of AI — intelligent, fast, and impactful solutions.",
+  description = "Building Africa's future of AI",
   socialLinks = defaultSocialLinks,
   copyright = "© 2025 Farasi AI Labs. All rights reserved.",
   legalLinks = defaultLegalLinks,
 }) => {
   return (
     <footer className="bg-white/95 backdrop-blur-md text-foreground py-16 mt-24">
-      <div className="container mx-auto px-4">
+      <div className="max-w-[1540px] mx-auto px-6">
         {/* Top Section */}
-        <div className="flex flex-col gap-10 lg:flex-row lg:justify-between lg:items-start">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Logo & Description */}
-          <div className="flex flex-col gap-6 lg:max-w-sm">
+          <div className="flex flex-col gap-6">
             <div className="flex items-center gap-2">
               <span className="text-xl font-semibold">{logo.title}</span>
             </div>
-            <p className="text-muted-foreground text-sm">{description}</p>
+            <p className="text-muted-foreground text-sm leading-relaxed">
+              {description} <br />
+              <span className="font-light text-xs">
+                Intelligent, fast, and impactful solutions.
+              </span>
+            </p>
 
             {/* Social Icons */}
-            <div className="flex gap-4">
+            <div className="flex gap-4 mt-2">
               {socialLinks.map((social, idx) => (
                 <a
                   key={idx}
@@ -108,32 +113,30 @@ const Footer7: React.FC<FooterProps> = ({
           </div>
 
           {/* Navigation Sections */}
-          <div className="grid grid-cols-2 w-full gap-6 md:grid-cols-3 lg:gap-15">
-            {sections.map((section, sectionIdx) => (
-              <div key={sectionIdx}>
-                <h3 className="mb-4 font-semibold">{section.title}</h3>
-                <ul className="flex flex-col gap-2 text-sm text-muted-foreground">
-                  {section.links.map((link, linkIdx) => (
-                    <li key={linkIdx}>
-                      <a
-                        href={link.href}
-                        className="hover:text-primary transition"
-                      >
-                        {link.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
+          {sections.map((section, sectionIdx) => (
+            <div key={sectionIdx} className="flex ml-10 flex-col">
+              <h3 className="mb-4 font-semibold text-lg">{section.title}</h3>
+              <ul className="flex flex-col gap-1 text-sm text-muted-foreground">
+                {section.links.map((link, linkIdx) => (
+                  <li key={linkIdx}>
+                    <a
+                      href={link.href}
+                      className="hover:text-primary transition"
+                    >
+                      {link.name}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
 
         {/* Bottom Section */}
-        <div className="mt-10 border-t border-e-muted pt-6 flex flex-col-reverse gap-4 md:flex-row md:justify-between md:items-center text-xs text-muted-foreground">
-          <p>{copyright}. </p>
+        <div className="mt-12 border-t border-muted pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-muted-foreground">
+          <p className="text-center md:text-left">{copyright}</p>
 
-          <ul className="flex gap-4">
+          <ul className="flex flex-wrap justify-center md:justify-end gap-4">
             {legalLinks.map((link, idx) => (
               <li key={idx}>
                 <a href={link.href} className="hover:text-primary transition">
