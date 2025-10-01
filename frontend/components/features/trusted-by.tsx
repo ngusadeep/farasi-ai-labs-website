@@ -56,34 +56,6 @@ const Logos3 = ({
         "https://upload.wikimedia.org/wikipedia/commons/2/21/Nvidia_logo.svg",
       className: "h-7 w-auto",
     },
-    {
-      id: "logo-5",
-      description: "DeepMind",
-      image:
-        "https://upload.wikimedia.org/wikipedia/commons/5/5e/DeepMind_logo.png",
-      className: "h-7 w-auto",
-    },
-    {
-      id: "logo-6",
-      description: "Anthropic",
-      image:
-        "https://upload.wikimedia.org/wikipedia/commons/7/7e/Anthropic_logo.svg",
-      className: "h-7 w-auto",
-    },
-    {
-      id: "logo-7",
-      description: "Hugging Face",
-      image:
-        "https://upload.wikimedia.org/wikipedia/commons/5/5a/Hugging_Face_logo.svg",
-      className: "h-7 w-auto",
-    },
-    {
-      id: "logo-8",
-      description: "Stability AI",
-      image:
-        "https://upload.wikimedia.org/wikipedia/commons/4/4e/Stability_AI_logo.svg",
-      className: "h-7 w-auto",
-    },
   ],
 }: Logos3Props) => {
   return (

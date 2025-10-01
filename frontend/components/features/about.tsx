@@ -6,10 +6,10 @@ const links = [
 ];
 
 const stats = [
-  { name: "AI Models Developed", value: "2" },
+  { name: "AI Models Developed", value: "10" },
   // { name: "Researchers", value: "25+" },
   { name: "Global Partnerships", value: "1" },
-  { name: "Projects Completed", value: "4" },
+  { name: "Projects Completed", value: "5" },
 ];
 
 export default function AboutUs() {

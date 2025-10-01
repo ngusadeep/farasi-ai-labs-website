@@ -88,7 +88,7 @@ const Footer7: React.FC<FooterProps> = ({
           {/* Logo & Description */}
           <div className="flex flex-col gap-6">
             <div className="flex items-center gap-2">
-              <span className="text-xl font-semibold">{logo.title}</span>
+              <span className="text-2xl font-semibold">{logo.title}</span>
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed">
               {description} <br />
@@ -114,7 +114,7 @@ const Footer7: React.FC<FooterProps> = ({
 
           {/* Navigation Sections */}
           {sections.map((section, sectionIdx) => (
-            <div key={sectionIdx} className="flex ml-10 flex-col">
+            <div key={sectionIdx} className="flex flex-col">
               <h3 className="mb-4 font-semibold text-lg">{section.title}</h3>
               <ul className="flex flex-col gap-1 text-sm text-muted-foreground">
                 {section.links.map((link, linkIdx) => (

@@ -8,7 +8,7 @@ import SplitText from "./../SplitText";
 
 const Hero12: React.FC = () => {
   return (
-    <section className="relative overflow-hidden py-64">
+    <section className="relative overflow-hidden py-42 lg:py-48">
       {/* Background Pattern */}
       <div className="absolute inset-0 -z-10 flex items-center justify-center opacity-30">
         <Image
